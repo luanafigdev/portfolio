@@ -1,151 +1,202 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Luana Figueiredo, desenvolvedora front-end.">
-  <title>Luana Figueiredo — Front-end Developer</title>
+  <meta name="theme-color" content="#f8f7f4">
+  <meta name="description" content="Luana Figueiredo, engenheira de computação e desenvolvedora front-end. Projetos, serviços e experiências digitais com atenção aos detalhes.">
+  <title>Luana Figueiredo — Desenvolvedora Front-end</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="header">
+  <header class="site-header">
     <div class="container nav">
-      <a href="#inicio" class="logo">LUANA FIGUEIREDO<span>.</span></a>
+      <a class="logo" href="#inicio" aria-label="Luana Figueiredo, voltar ao início">
+        LUANA FIGUEIREDO<span aria-hidden="true">.</span>
+      </a>
 
-      <nav aria-label="Navegação principal">
+      <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false">
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Navegação principal">
         <a href="#projetos">Projetos</a>
         <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
         <a href="#contato">Contato</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="container hero-content">
-        <span class="eyebrow">
-          DESENVOLVEDORA FRONT-END · PORTFÓLIO
-        </span>
-
-        <h1>
-          Transformando ideias em
-          <em>experiências digitais.</em>
-        </h1>
-
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="container hero-content" data-reveal>
+        <span class="eyebrow">ENGENHEIRA DE COMPUTAÇÃO · DESENVOLVEDORA FRONT-END</span>
+        <h1 id="titulo-inicio">Transformando ideias em <em>experiências digitais.</em></h1>
         <p class="hero-description">
-          Desenvolvo sites modernos, responsivos e cuidadosamente
-          pensados para unir estética, funcionalidade e identidade.
+          Desenvolvo sites modernos, responsivos e cuidadosamente pensados
+          para unir estética, funcionalidade e identidade.
         </p>
-
         <div class="hero-actions">
-          <a href="#projetos" class="btn-primary">
-            Explorar projetos <span>↗</span>
-          </a>
-          <a href="#contato" class="btn-text">
-            Vamos conversar <span>↗</span>
-          </a>
+          <a class="btn-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↗</span></a>
+          <a class="btn-text" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-
-      <div class="container hero-bottom">
+      <div class="container hero-bottom" aria-hidden="true">
         <span>DESIGN & DESENVOLVIMENTO</span>
-        <span>SCROLL PARA EXPLORAR ↓</span>
+        <span>ROLE PARA EXPLORAR ↓</span>
       </div>
     </section>
 
-    <section class="section-preview" id="projetos">
+    <section class="section section-projects" id="projetos" aria-labelledby="titulo-projetos">
       <div class="container">
-        <span class="eyebrow">01 / PROJETOS</span>
-        <h2>Projetos selecionados<span>.</span></h2>
-        <p>
-          Uma seleção de experiências digitais que unem
-          desenvolvimento, funcionalidade e cuidado visual.
-        </p>
-        
-<article class="project-featured">
-  <a
-    class="project-cover"
-    href="https://flordeacucar.netlify.app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Visitar o site Flor de Açúcar"
-  >
-    <img
-      src="assets/flor-de-acucar.png"
-      alt="Página inicial do site Flor de Açúcar"
-      loading="lazy"
-    >
-    <span class="project-arrow" aria-hidden="true">↗</span>
-  </a>
+        <div class="section-heading" data-reveal>
+          <span class="eyebrow">01 / PROJETOS</span>
+          <h2 id="titulo-projetos">Projetos selecionados<span class="accent">.</span></h2>
+          <p>Uma seleção de experiências digitais que unem desenvolvimento, funcionalidade e cuidado visual.</p>
+        </div>
 
-  <div class="project-info">
-    <div>
-      <span class="project-number">001 / WEBSITE COMERCIAL</span>
-      <h3>Flor de Açúcar</h3>
-      <p>
-        Website para confeitaria artesanal com catálogo,
-        personalização de encomendas, carrinho e
-        integração com WhatsApp.
-      </p>
-
-      <div class="project-tags">
-        <span>Web Design</span>
-        <span>Front-end</span>
-        <span>Responsividade</span>
-      </div>
-    </div>
-
-    <a
-      class="project-visit"
-      href="https://flordeacucar.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Explorar projeto ↗
-    </a>
-  </div>
-</article>
-
-    </section>
-
-    <section class="section-preview about" id="sobre">
-      <div class="container">
-        <span class="eyebrow">02 / SOBRE</span>
-        <h2>Um pouco sobre mim<span>.</span></h2>
-        <p>
-          Sou Luana, desenvolvedora front-end interessada em criar
-          interfaces que combinam design, tecnologia e boas
-          experiências para quem navega.
-        </p>
+        <article class="project-featured" data-reveal>
+          <a class="project-cover" href="https://flordeacucar.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar o site Flor de Açúcar">
+            <img src="assets/flor-de-acucar.png" alt="Captura da página inicial do site Flor de Açúcar" width="1898" height="655" loading="lazy">
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-info">
+            <div>
+              <span class="project-number">001 / WEBSITE COMERCIAL</span>
+              <h3>Flor de Açúcar</h3>
+              <p>
+                Website para confeitaria artesanal com catálogo, personalização
+                de encomendas, carrinho e contato via WhatsApp.
+              </p>
+              <div class="project-tags" aria-label="Características do projeto">
+                <span>Web Design</span>
+                <span>Catálogo interativo</span>
+                <span>Encomendas</span>
+              </div>
+            </div>
+            <a class="project-visit" href="https://flordeacucar.netlify.app/" target="_blank" rel="noopener noreferrer">Explorar projeto <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="section-preview contact" id="contato">
+    <section class="section about" id="sobre" aria-labelledby="titulo-sobre">
       <div class="container">
-        <span class="eyebrow">03 / CONTATO</span>
-        <h2>Vamos criar algo juntos<span>?</span></h2>
-        <p>
-          Aberta a oportunidades, projetos e colaborações.
-        </p>
-        <a href="https://github.com/luanafigdev" target="_blank" rel="noopener noreferrer" class="btn-text">
-          Meu GitHub ↗
-        </a>
+        <div class="about-heading" data-reveal>
+          <span class="eyebrow">02 / SOBRE MIM</span>
+          <h2 id="titulo-sobre">Tecnologia com propósito,<br><em>design com intenção.</em></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content" data-reveal>
+            <h3>Olá, sou Luana.</h3>
+            <p>
+              Sou engenheira de computação e desenvolvedora web, com interesse
+              em transformar ideias em experiências digitais que unem
+              tecnologia, funcionalidade e design.
+            </p>
+            <p>
+              Desenvolvo projetos por conta própria, explorando diferentes
+              tecnologias para criar interfaces modernas, responsivas e intuitivas.
+            </p>
+            <p>
+              Valorizo os detalhes que tornam um site agradável de usar,
+              da organização do conteúdo à experiência em diferentes dispositivos.
+            </p>
+            <a class="about-link" href="https://github.com/luanafigdev" target="_blank" rel="noopener noreferrer">Conhecer meu GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="about-skills" data-reveal>
+            <span class="skills-label">TECNOLOGIAS & FERRAMENTAS</span>
+            <ul class="skills-grid" aria-label="Tecnologias">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Python</li>
+              <li>Git & GitHub</li>
+            </ul>
+            <div class="skills-footer">
+              <span>ÁREAS DE INTERESSE</span>
+              <p>Desenvolvimento web · Front-end · Interfaces responsivas · Experiência do usuário</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicos" aria-labelledby="titulo-servicos">
+      <div class="container">
+        <div class="section-heading services-heading" data-reveal>
+          <span class="eyebrow">03 / SERVIÇOS</span>
+          <h2 id="titulo-servicos">O que posso criar <em>para você.</em></h2>
+          <p>Soluções digitais pensadas para transformar ideias em experiências funcionais, elegantes e intuitivas.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-reveal>
+            <div class="service-top"><span>01</span><span aria-hidden="true">↗</span></div>
+            <div class="service-content">
+              <h3>Landing Pages</h3>
+              <p>Páginas modernas para apresentar produtos, serviços ou campanhas de maneira clara e envolvente.</p>
+            </div>
+          </article>
+          <article class="service-card" data-reveal>
+            <div class="service-top"><span>02</span><span aria-hidden="true">↗</span></div>
+            <div class="service-content">
+              <h3>Sites Institucionais</h3>
+              <p>Websites profissionais que valorizam a identidade de marcas, negócios e profissionais independentes.</p>
+            </div>
+          </article>
+          <article class="service-card" data-reveal>
+            <div class="service-top"><span>03</span><span aria-hidden="true">↗</span></div>
+            <div class="service-content">
+              <h3>Redesign de Sites</h3>
+              <p>Modernização de interfaces existentes, com foco em organização visual, responsividade e experiência do usuário.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato" aria-labelledby="titulo-contato">
+      <div class="container">
+        <div class="contact-heading" data-reveal>
+          <span class="eyebrow">04 / CONTATO</span>
+          <h2 id="titulo-contato">Tem uma ideia em mente? <em>Vamos conversar.</em></h2>
+          <p>
+            Estou aberta a novas oportunidades, projetos e colaborações.
+            Se você procura alguém para transformar sua ideia em uma experiência
+            digital, será um prazer conversar.
+          </p>
+        </div>
+        <div class="contact-details" data-reveal>
+          <span class="contact-label">E-MAIL PROFISSIONAL</span>
+          <a class="email-link" href="mailto:luanafigueiredo.dev@gmail.com">luanafigueiredo.dev@gmail.com</a>
+          <div class="contact-actions">
+            <a class="contact-button" href="mailto:luanafigueiredo.dev@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio">Enviar e-mail <span aria-hidden="true">↗</span></a>
+            <a class="contact-github" href="https://github.com/luanafigdev" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <span>© <span id="year"></span> Luana Figueiredo</span>
+    <div class="container footer-content">
+      <span>© <span id="year">2026</span> Luana Figueiredo</span>
       <span>Desenvolvido com atenção aos detalhes.</span>
+      <a href="#inicio">Voltar ao topo ↑</a>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
