@@ -4,16 +4,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luana Figueiredo | Web Developer</title>
+  <meta name="description" content="Portfólio de Luana Figueiredo, desenvolvedora front-end.">
+  <title>Luana Figueiredo — Front-end Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="hero">
-    <span class="eyebrow">PORTFÓLIO • 2026</span>
-    <h1>Olá, sou Luana.</h1>
-    <p>Desenvolvedora web criando experiências digitais elegantes e funcionais.</p>
-    <a href="https://github.com/luanafigdev">Conheça meu GitHub ↗</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">LUANA FIGUEIREDO<span>.</span></a>
+
+      <nav aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <span class="eyebrow">
+          DESENVOLVEDORA FRONT-END · PORTFÓLIO
+        </span>
+
+        <h1>
+          Transformando ideias em
+          <em>experiências digitais.</em>
+        </h1>
+
+        <p class="hero-description">
+          Desenvolvo sites modernos, responsivos e cuidadosamente
+          pensados para unir estética, funcionalidade e identidade.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projetos" class="btn-primary">
+            Explorar projetos <span>↗</span>
+          </a>
+          <a href="#contato" class="btn-text">
+            Vamos conversar <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="container hero-bottom">
+        <span>DESIGN & DESENVOLVIMENTO</span>
+        <span>SCROLL PARA EXPLORAR ↓</span>
+      </div>
+    </section>
+
+    <section class="section-preview" id="projetos">
+      <div class="container">
+        <span class="eyebrow">01 / PROJETOS</span>
+        <h2>Projetos selecionados<span>.</span></h2>
+        <p>
+          Uma seleção de experiências digitais que unem
+          desenvolvimento, funcionalidade e cuidado visual.
+        </p>
+        
+<article class="project-featured">
+  <a
+    class="project-cover"
+    href="https://flordeacucar.netlify.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Visitar o site Flor de Açúcar"
+  >
+    <img
+      src="assets/flor-de-acucar.png"
+      alt="Página inicial do site Flor de Açúcar"
+      loading="lazy"
+    >
+    <span class="project-arrow" aria-hidden="true">↗</span>
+  </a>
+
+  <div class="project-info">
+    <div>
+      <span class="project-number">001 / WEBSITE COMERCIAL</span>
+      <h3>Flor de Açúcar</h3>
+      <p>
+        Website para confeitaria artesanal com catálogo,
+        personalização de encomendas, carrinho e
+        integração com WhatsApp.
+      </p>
+
+      <div class="project-tags">
+        <span>Web Design</span>
+        <span>Front-end</span>
+        <span>Responsividade</span>
+      </div>
+    </div>
+
+    <a
+      class="project-visit"
+      href="https://flordeacucar.netlify.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Explorar projeto ↗
+    </a>
+  </div>
+</article>
+
+    </section>
+
+    <section class="section-preview about" id="sobre">
+      <div class="container">
+        <span class="eyebrow">02 / SOBRE</span>
+        <h2>Um pouco sobre mim<span>.</span></h2>
+        <p>
+          Sou Luana, desenvolvedora front-end interessada em criar
+          interfaces que combinam design, tecnologia e boas
+          experiências para quem navega.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-preview contact" id="contato">
+      <div class="container">
+        <span class="eyebrow">03 / CONTATO</span>
+        <h2>Vamos criar algo juntos<span>?</span></h2>
+        <p>
+          Aberta a oportunidades, projetos e colaborações.
+        </p>
+        <a href="https://github.com/luanafigdev" target="_blank" rel="noopener noreferrer" class="btn-text">
+          Meu GitHub ↗
+        </a>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> Luana Figueiredo</span>
+      <span>Desenvolvido com atenção aos detalhes.</span>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
