@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f8f7f4;
+  color: #242420;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #89867f;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(56px, 9vw, 110px);
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 24px 0;
+}
+
+p {
+  font-size: 18px;
+  color: #77746d;
+  max-width: 480px;
+  line-height: 1.8;
+}
+
+a {
+  color: #242420;
+  margin-top: 24px;
+  text-decoration: none;
+  border-bottom: 1px solid #242420;
+  padding-bottom: 6px;
+}
+
+a:hover {
+  color: #8d785d;
+  border-color: #8d785d;
+}
