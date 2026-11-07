@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f8f7f4">
+  <meta name="theme-color" content="#f6f6f4">
   <meta name="description" content="Luana Figueiredo, engenheira de computação e desenvolvedora front-end. Projetos, serviços e experiências digitais com atenção aos detalhes.">
   <title>Luana Figueiredo — Desenvolvedora Front-end</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -56,6 +56,36 @@
       </div>
     </section>
 
+    <section class="universe-feature" aria-labelledby="titulo-universo">
+      <div class="container">
+        <div class="universe-feature-card">
+          <div class="universe-feature-copy">
+            <span class="universe-kicker">PROJETO AUTORAL · EXPERIÊNCIA INTERATIVA</span>
+            <h2 id="titulo-universo">Um universo inteiro para <span>explorar.</span></h2>
+            <p>
+              Transformei meu portfólio em uma vila ilustrada. Caminhe pelo mapa,
+              descubra os projetos e encontre o Dudu, nosso mascote de quatro patas.
+            </p>
+            <a class="universe-feature-button"
+               href="https://luanafigdev.github.io/universo-de-luana/"
+               target="_blank" rel="noopener noreferrer">
+              Explorar meu universo <span aria-hidden="true">↗</span>
+            </a>
+            <span class="universe-feature-meta">HTML · CSS · JavaScript · Canvas 2D</span>
+          </div>
+          <a class="universe-feature-preview"
+             href="https://luanafigdev.github.io/universo-de-luana/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Abrir o Universo de Luana em uma nova aba">
+            <img src="assets/universo-preview.webp"
+                 alt="Vila ilustrada com confeitaria, fliperama, laboratório, correio e uma fonte no centro"
+                 width="1536" height="960" loading="lazy">
+            <span class="universe-feature-image-label" aria-hidden="true">ENTRAR NA VILA ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-projects" id="projetos" aria-labelledby="titulo-projetos">
       <div class="container">
         <div class="section-heading" data-reveal>
@@ -64,26 +94,61 @@
           <p>Uma seleção de experiências digitais que unem desenvolvimento, funcionalidade e cuidado visual.</p>
         </div>
 
-        <article class="project-featured" data-reveal>
-          <a class="project-cover" href="https://flordeacucar.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar o site Flor de Açúcar">
-            <img src="assets/flor-de-acucar.png" alt="Captura da página inicial do site Flor de Açúcar" width="1898" height="655" loading="lazy">
-            <span class="project-arrow" aria-hidden="true">↗</span>
-          </a>
-          <div class="project-info">
-            <div>
-              <span class="project-number">001 / WEBSITE COMERCIAL</span>
-              <h3>Flor de Açúcar</h3>
+        <div class="brand-intro" data-reveal>
+          <span class="eyebrow">001 / REBRANDING DIGITAL</span>
+          <h3>Flor de Açúcar, <em>uma nova fase.</em></h3>
+          <p>
+            Da primeira identidade digital a uma experiência renovada: um projeto de evolução visual,
+            organização do catálogo e aprimoramento da jornada de encomendas.
+          </p>
+        </div>
+
+        <article class="brand-case" aria-labelledby="flor-titulo" data-reveal>
+          <div class="brand-comparison">
+            <a class="brand-version" href="https://flordeacucar.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer a versão atual da Flor de Açúcar">
+              <div class="brand-preview">
+                <img src="assets/flor-de-acucar.png" alt="Visual da primeira versão do site Flor de Açúcar, com identidade em tons de rosa" loading="lazy" width="1898" height="655">
+                <span class="brand-preview-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="brand-version-info">
+                <div><span>01 / ANTES</span><strong>Primeira identidade</strong></div>
+                <span class="brand-status">Site atual</span>
+              </div>
+            </a>
+            <a class="brand-version" href="https://flordeacucarba.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Conhecer a prévia do redesign da Flor de Açúcar para 2027">
+              <div class="brand-preview">
+                <img src="assets/flor-de-acucar-redesign.jpg" alt="Prévia da nova identidade da Flor de Açúcar, com lírio, tons suaves, verde-oliva e tipografia editorial" loading="lazy" width="1290" height="725">
+                <span class="brand-preview-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="brand-version-info">
+                <div><span>02 / DEPOIS</span><strong>Nova identidade</strong></div>
+                <span class="brand-status brand-status-future">Prévia 2027</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="brand-case-details">
+            <div class="brand-story">
+              <h4 id="flor-titulo">Uma experiência digital feita para evoluir.</h4>
               <p>
-                Website para confeitaria artesanal com catálogo, personalização
-                de encomendas, carrinho e contato via WhatsApp.
+                O redesign da Flor de Açúcar apresenta uma identidade mais editorial e delicada,
+                com nova organização das coleções, personalização de produtos, carrinho e
+                finalização de encomendas pelo WhatsApp.
               </p>
-              <div class="project-tags" aria-label="Características do projeto">
-                <span>Web Design</span>
-                <span>Catálogo interativo</span>
-                <span>Encomendas</span>
+              <p class="brand-disclaimer">
+                A nova versão está disponível para visita como prévia pública. O lançamento oficial da nova identidade está previsto para 2027.
+              </p>
+              <div class="project-tags" aria-label="Áreas do projeto">
+                <span>Rebranding digital</span>
+                <span>UI/UX</span>
+                <span>Front-end</span>
+                <span>E-commerce sob encomenda</span>
               </div>
             </div>
-            <a class="project-visit" href="https://flordeacucar.netlify.app/" target="_blank" rel="noopener noreferrer">Explorar projeto <span aria-hidden="true">↗</span></a>
+            <div class="brand-links">
+              <a class="project-visit" href="https://flordeacucar.netlify.app/" target="_blank" rel="noopener noreferrer">Ver site atual <span aria-hidden="true">↗</span></a>
+              <a class="brand-link-main" href="https://flordeacucarba.netlify.app/" target="_blank" rel="noopener noreferrer">Explorar redesign <span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </article>
 
