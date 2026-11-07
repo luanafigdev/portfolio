@@ -171,3 +171,61 @@ h1, h2, h3 { font-family: var(--font-title); font-weight: 400; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* Projeto interativo */
+.project-intro-game { max-width: 760px; margin: 120px 0 44px; }
+.project-intro-game h3 { margin: 20px 0 18px; font-size: clamp(40px, 5.8vw, 76px); line-height: 1.16; letter-spacing: -.025em; }
+.project-intro-game h3 em { color: var(--accent); font-weight: 400; }
+.project-intro-game p { max-width: 650px; margin: 0; color: var(--muted); font-size: 15px; line-height: 1.9; }
+.game-cover { position: relative; display: flex; justify-content: center; align-items: center; min-height: 540px; overflow: hidden; background: radial-gradient(ellipse at 50% 45%, #292b34, #14151b 72%); padding: 40px 24px; }
+.game-cover > img { display: block; width: auto; height: 465px; max-width: 100%; object-fit: contain; border: 2px solid #484a57; border-radius: 17px; box-shadow: 0 18px 45px rgba(0,0,0,.38); transition: transform .55s ease; }
+.game-cover:hover > img { transform: translateY(-6px) scale(1.02); }
+.game-cover-label { position: absolute; top: 28px; left: 30px; color: #dad9de; letter-spacing: 1.8px; font-size: 10px; font-weight: 600; }
+.game-cover-cta { position: absolute; bottom: 24px; right: 30px; display: inline-flex; gap: 12px; align-items: center; padding: 11px 17px; background: var(--background); color: var(--text); font-size: 12px; font-weight: 600; }
+@media (max-width: 700px) {
+  .project-intro-game { margin-top: 85px; margin-bottom: 30px; }
+  .project-intro-game h3 { font-size: clamp(40px, 9vw, 58px); }
+  .game-cover { min-height: 450px; padding: 60px 16px 58px; }
+  .game-cover > img { height: 340px; }
+  .game-cover-label { top: 18px; left: 18px; }
+  .game-cover-cta { right: 18px; bottom: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { .game-cover > img { transition: none; } }
+
+.project-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.project-actions .project-visit {
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .project-actions {
+    justify-content: flex-start;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .project-actions {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .game-cover {
+    min-height: 410px;
+  }
+
+  .game-cover > img {
+    height: 310px;
+  }
+
+  .game-cover-label {
+    font-size: 9px;
+  }
+}
