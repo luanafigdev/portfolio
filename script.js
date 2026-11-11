@@ -53,3 +53,15 @@ if ("IntersectionObserver" in window && !reduceMotion && revealItems.length) {
   revealItems.forEach(item => observer.observe(item));
   document.documentElement.classList.add("has-motion");
 }
+
+
+document.querySelectorAll('img[data-fallback]').forEach(image => {
+  const loadFallback = () => {
+    if (image.dataset.fallbackUsed) return;
+    image.dataset.fallbackUsed = 'true';
+    image.src = image.dataset.fallback;
+  };
+
+  image.addEventListener('error', loadFallback);
+  if (image.complete && image.naturalWidth === 0) loadFallback();
+});

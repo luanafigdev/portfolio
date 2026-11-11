@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs><linearGradient id="night" x2="1" y2="1"><stop stop-color="#17182f"/><stop offset="1" stop-color="#514262"/></linearGradient><radialGradient id="shine"><stop stop-color="#d4bddf" stop-opacity=".45"/><stop offset="1" stop-color="#d4bddf" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="800" fill="url(#night)"/><circle cx="910" cy="310" r="280" fill="url(#shine)"/>
+<g fill="#f8eddd"><circle cx="892" cy="275" r="132"/><circle cx="936" cy="235" r="131" fill="#3d3754"/></g>
+<g fill="#d7c2d8" opacity=".82"><circle cx="194" cy="124" r="3"/><circle cx="385" cy="212" r="2"/><circle cx="570" cy="96" r="2"/><circle cx="1035" cy="129" r="3"/><circle cx="1148" cy="344" r="2"/><circle cx="700" cy="530" r="2"/></g>
+<g stroke="#a2b59e" fill="none" stroke-width="5" stroke-linecap="round"><path d="M855 775Q797 620 824 506"/><path d="M961 787Q910 629 942 518"/><path d="M1054 800Q1027 663 1038 569"/><path d="M820 638Q744 600 703 618M935 674Q1027 616 1066 638"/></g>
+<g fill="#eee1ee"><ellipse cx="821" cy="499" rx="33" ry="63"/><ellipse cx="821" cy="499" rx="63" ry="33"/><ellipse cx="940" cy="504" rx="35" ry="60"/><ellipse cx="940" cy="504" rx="62" ry="33"/><ellipse cx="1040" cy="554" rx="33" ry="58"/><ellipse cx="1040" cy="554" rx="59" ry="32"/></g><g fill="#ceb9ce"><circle cx="821" cy="499" r="18"/><circle cx="940" cy="504" r="18"/><circle cx="1040" cy="554" r="18"/></g>
+<text x="84" y="142" font-family="Arial,sans-serif" font-size="17" letter-spacing="5" fill="#cebfd4">A GARDEN AFTER DARK</text>
+<text x="73" y="384" font-family="Georgia,serif" font-size="112" fill="#faf2ff">Moonbloom</text>
+<text x="84" y="438" font-family="Georgia,serif" font-size="32" font-style="italic" fill="#d7c4e3">Algumas flores desabrocham à noite.</text>
+<text x="86" y="729" font-family="Arial,sans-serif" font-size="16" letter-spacing="4" fill="#dbcde2">JOGO  /  ESTRATÉGIA  /  FANTASIA</text>
+</svg>
